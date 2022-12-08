@@ -21,8 +21,7 @@ python -m hooks.ensure_venv
 ```yaml
 repos:
 -   repo: https://github.com/hectorcanto/myhooks
-    rev: v0.1.0
+    rev: 0.1.0
     hooks:
-      - id: hooks
-
+      - id: ensure-venv
 ```

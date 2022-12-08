@@ -1,5 +1,5 @@
 -   id: ensure-venv
-    name: check for added large files
+    name: check active virtualenv
     description: prevent running hooks outside virtualenv
     entry: ensure-venv
     language: python
