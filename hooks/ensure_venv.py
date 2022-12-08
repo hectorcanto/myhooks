@@ -5,7 +5,7 @@ from pathlib import Path
 __version__ = "0.1.0"
 
 
-def is_venv():
+def in_venv():
     """Check virtualenv active using sys prefixes"""
     inside_venv = hasattr(sys, "real_prefix") or (
         hasattr(sys, "base_prefix") and sys.base_prefix != sys.prefix
@@ -25,5 +25,5 @@ def is_venv():
 
 
 if __name__ == "__main__":
-    is_venv()
+    in_venv()
 

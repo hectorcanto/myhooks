@@ -12,9 +12,9 @@ Otherwise, you should not run the rest of the hooks.
 
 ```shell
 pipenv shell
-python -m hooks.ensure-venv.main
+python -m hooks.ensure_venv
 exit
-python -m hooks.ensure-venv.main
+python -m hooks.ensure_venv
 ```
 
 ### Usage
