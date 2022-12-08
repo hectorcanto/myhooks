@@ -18,8 +18,9 @@ def is_venv():
     if venv_without_hash not in str(current_route):
         print(f"You are not in the right a virtualenv: current: {current_venv}")
         sys.exit(1)
-    return current_venv
-
+    print(f"You are in virtualenv '{current_venv}'")
+    # return current_venv
+    sys.exit(0)
 
 if __name__ == "__main__":
     CURRENT = is_venv()

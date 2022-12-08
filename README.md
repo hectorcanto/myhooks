@@ -3,7 +3,7 @@
 custom pre-commit hooks
 
 
-## ensure-venv Ensure Virtualenv
+## ensure-venv: Ensure Virtualenv
 
 This is a pre-commit-hook to check that you are inside the right virtualenv
 Otherwise, you should not run the rest of the hooks.
@@ -12,9 +12,9 @@ Otherwise, you should not run the rest of the hooks.
 
 ```shell
 pipenv shell
-python -m ensure-venv.main
+python -m hooks.ensure-venv.main
 exit
-python -m ensure-venv.main
+python -m hooks.ensure-venv.main
 ```
 
 ### Usage
@@ -23,6 +23,6 @@ repos:
 -   repo: https://github.com/hectorcanto/myhooks
     rev: v0.1.0
     hooks:
-      - id: ensure-venv
+      - id: hooks
 
 ```
