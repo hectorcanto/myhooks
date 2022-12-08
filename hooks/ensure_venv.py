@@ -5,7 +5,7 @@ from pathlib import Path
 __version__ = "0.1.0"
 
 
-def in_venv() ->:
+def in_venv():
     """Check virtualenv active using sys prefixes
 
     Returns:
