@@ -8,7 +8,7 @@ clean-python:  ## Remove python compiled and temporal files
 	@rm -rf dist/
 	@rm -rf myhooks.egg-info/
 
-build:
-	@python -m hooks.ensure-env.main
+build: clean-python
+	@python setup.py sdist bdist_wheel
 
 .PHONY: clean-python build

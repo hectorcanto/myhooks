@@ -2,6 +2,8 @@
 import sys
 from pathlib import Path
 
+__version__ = "0.1.0"
+
 
 def is_venv():
     """Check virtualenv active using sys prefixes"""
@@ -19,10 +21,9 @@ def is_venv():
         print(f"You are not in the right a virtualenv: current: {current_venv}")
         sys.exit(1)
     print(f"You are in virtualenv '{current_venv}'")
-    # return current_venv
     sys.exit(0)
 
+
 if __name__ == "__main__":
-    CURRENT = is_venv()
-    print(f"You are in virtualenv '{CURRENT}'")
-    sys.exit(0)
+    is_venv()
+
